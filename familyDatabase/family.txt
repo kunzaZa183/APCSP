@@ -1,0 +1,9 @@
+Henry VII,None,None
+Elizabeth of York,None,None
+Henry VIII,Henry VII,Elizabeth of York
+Catherine of Aragon,None,Henry VIII
+Anne Boleyn,None,Henry VIII
+Jane Seymour,None,Henry VIII
+Mary I,Catherine of Aragon,None
+Elizabeth I,Anne Boleyn,None
+Edward VI,Jane Seymour,None
