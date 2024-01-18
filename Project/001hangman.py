@@ -23,8 +23,6 @@ lives = 5
 
 # Creating the screen
 screen = pygame.display.set_mode((1200, 800))
-screen.fill(WHITE)
-
 
 # Function to draw the rectangle and clean the screen
 def clean(topleft, bottomright):
@@ -32,6 +30,7 @@ def clean(topleft, bottomright):
         screen, WHITE, (topleft[0], topleft[1], bottomright[0], bottomright[1])
     )
 
+clean((0,0), (1200, 800))
 
 # Draw the ground
 pygame.draw.line(screen, BLACK, (400, 400), (800, 400), 5)
@@ -137,10 +136,3 @@ if not (0 in guessedlist):
     print("GOOD")
 else:
     print("YOU SUCK")
-
-for event in pygame.event.get():
-    if event.type == pygame.QUIT or (
-        event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE
-    ):
-        pygame.quit()
-        sys.exit()
